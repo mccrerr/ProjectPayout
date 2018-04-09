@@ -1,0 +1,107 @@
+.border {
+  border-bottom:solid black 1px;
+  border-left:solid black 1px;
+  border-right:solid black 1px;
+}
+
+.flexDemoContainer {
+  box-sizing: content-box !important;
+  margin: 50px;
+}
+
+.button {
+  background-color: #4472c4;
+  border: none;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 8px;
+  height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+  /* cursor: pointer; */
+  /* padding: 20px; */
+  /* line-height: 25px; */
+  /* display: inline-block; */
+  }
+
+  .input-group-addon {
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color: #eee /*  #b4c7e7 */;
+    border: 1px solid #ccc;
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+/* https://codepen.io/anon/pen/XEyPWr */
+
+input {
+    /* position: relative;
+    z-index: 2; */
+    /* float: left; */
+    /* width: 100%; */
+    /* margin: 0; */
+    margin-bottom: 0;
+    display: table-cell;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+}
+
+.prefix input {
+    border-radius: 0px 4px 4px 0px;
+}
+
+.prefix .input-group-addon {
+    border-right: 0;
+    border-radius: 4px 0px 0px 4px;
+}
+
+.input-group-addon.prefix {
+    border-radius: 4px 0px 0px 4px;
+    border-right: 0;
+}
+
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* .left-inner-addon {
+  position: relative;
+}
+.left-inner-addon input {
+  padding-left: 22px;
+}
+.left-inner-addon span {
+  position: absolute;
+  padding: 7px 12px;
+  pointer-events: none;
+}
+.right-inner-addon {
+  position: relative;
+}
+.right-inner-addon input {
+  padding-right: 30px;
+}
+.right-inner-addon span {
+  position: absolute;
+  right: 0px;
+  padding: 7px 12px;
+  pointer-events: none;
+} */

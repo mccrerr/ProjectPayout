@@ -1,0 +1,73 @@
+<div fxLayout="column" style="width: 600px" class="flexDemoContainer">
+  <form [formGroup]=quarterlyAmountForm (ngSubmit)="save()">
+
+    <div fxLayoutAlign="start center" fxLayout="row" fxLayoutGap="75px"
+      style="background-color:#c5e0b4; height: 40px;
+    border:solid black 1px; padding:20px;">
+      <div style="width: 100px; ">Fiscal Year</div>
+      <div style="width: 100px">Quarter</div>
+      <div style="width: 100px">Amount</div>
+    </div>
+
+    <div class="border" fxLayout="row" style="background-color : #b4c7e7;
+      height: 30px;"></div>
+
+    <div fxLayoutAlign="start center" fxLayout="row" fxLayoutGap="75px" class="border" style="background-color : white; height: 40px; padding:20px;">
+      <div style="width:100px">{{fiscalYear[0]}}</div>
+      <div style="width:100px">{{quarter[0]}}</div>
+      <div class="input-group prefix" style="width:100px">
+        <span class="input-group-addon">$</span>
+        <input fxFlexAlign="start center"  type = "number" #amount1 formControlName="amountL1" placeholder="0.00" tabindex="1" style="max-width: 80px;"
+        />
+      </div>
+    </div>
+
+    <div class="border" fxLayout="row" style="background-color : #b4c7e7;
+    height: 10px;"></div>
+
+    <div fxLayoutAlign="start center" fxLayout="row" fxLayoutGap="75px" class="border" style="background-color : white; height: 40px; padding:20px;">
+      <div style="width:100px">{{fiscalYear[1]}}</div>
+      <div style="width:100px">{{quarter[1]}}</div>
+      <div class="input-group prefix" style="width:100px">
+        <span class="input-group-addon">$</span>
+        <input fxFlexAlign="start center"  type = "number" #amount1 formControlName="amountL2" placeholder="0.00" tabindex="1" style="max-width: 80px;"
+        />
+      </div>
+    </div>
+
+    <div class="border" fxLayout="row" style="background-color : #b4c7e7;
+    height: 10px;"></div>
+
+    <div fxLayoutAlign="start center" fxLayout="row" fxLayoutGap="75px" class="border" style="background-color : white; height: 40px; padding:20px;">
+      <div style="width:100px">{{fiscalYear[2]}}</div>
+      <div style="width:100px">{{quarter[2]}}</div>
+      <div class="input-group prefix" style="width:100px">
+        <span class="input-group-addon">$</span>
+        <input fxFlexAlign="start center" type = "number" #amount1 formControlName="amountL3"
+        placeholder="0.00" tabindex="1" style="max-width: 80px;"
+        />
+      </div>
+    </div>
+
+    <div class="border" fxLayout="row" style="background-color : #b4c7e7;
+    height: 10px;"></div>
+
+    <div fxLayoutAlign="start center" fxLayout="row" fxLayoutGap="75px" class="border" style="background-color : white; height: 40px; padding:20px;">
+      <div style="width:100px">{{fiscalYear[3]}}</div>
+      <div style="width:100px">{{quarter[3]}}</div>
+      <div class="input-group prefix" style="width:100px">
+        <span class="input-group-addon">$</span>
+        <input fxFlexAlign="start center"  type = "number" #amount1 formControlName="amountL4" placeholder="0.00" tabindex="1" style="max-width: 80px;"
+        />
+      </div>
+    </div>
+
+    <div class="border" fxLayout="column" fxLayoutAlign="center center" style="background-color : #b4c7e7; height: 120px; ">
+      <div fxLayout="row">
+      <button class="button" style="width:140px;" (click)="previousYear()">Previous Year</button>
+      <button class="button" style="width:140px;" (click)="nextYear()">Next Year</button>
+    </div>
+      <button class="button" style="width:110px;" >Save</button>
+    </div>
+  </form>
+</div>
